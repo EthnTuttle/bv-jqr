@@ -7,6 +7,8 @@ import 'screens/study_screen.dart';
 import 'screens/community_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/section_detail_screen.dart';
+import 'screens/attestations_screen.dart';
+import 'screens/analytics_screen.dart';
 import 'screens/navigation_shell.dart';
 import 'providers/jqr_providers.dart';
 import 'services/auth_service.dart';
@@ -73,21 +75,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       // Additional routes for future features
       GoRoute(
         path: '/attestations',
-        builder: (context, state) => Scaffold(
-          appBar: AppBar(title: const Text('Attestations')),
-          body: const Center(
-            child: Text('Attestation management\nComing soon!'),
-          ),
-        ),
+        builder: (context, state) => const AttestationsScreen(),
       ),
       GoRoute(
         path: '/analytics',
-        builder: (context, state) => Scaffold(
-          appBar: AppBar(title: const Text('Analytics')),
-          body: const Center(
-            child: Text('Progress analytics\nComing soon!'),
-          ),
-        ),
+        builder: (context, state) => const AnalyticsScreen(),
       ),
     ],
   );

@@ -141,7 +141,7 @@ class AuthScreen extends HookConsumerWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'To educate and qualify the warrior class in Bitcoin and Freedom Technology, promoting individual sovereignty and decentralized systems.',
+                      'To educate and qualify the warrior class in Bitcoin skills, promoting professional competency and peer-to-peer verification systems.',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: Theme.of(context).colorScheme.onPrimaryContainer,
                       ),
@@ -151,10 +151,8 @@ class AuthScreen extends HookConsumerWidget {
                       spacing: 8,
                       runSpacing: 4,
                       children: [
-                        _buildPrincipleChip(context, 'No Shitcoins'),
-                        _buildPrincipleChip(context, 'No Violence'),
-                        _buildPrincipleChip(context, 'Decentralization'),
-                        _buildPrincipleChip(context, 'Self-Sovereignty'),
+                        _buildPrincipleChip(context, 'Bitcoin Only'),
+                        _buildPrincipleChip(context, 'Professional Standards'),
                       ],
                     ),
                   ],
@@ -217,7 +215,7 @@ class AuthScreen extends HookConsumerWidget {
               if (amberAvailable.value == false) ...[
                 const SizedBox(height: 8),
                 Text(
-                  'Install the Amber signer app from Google Play Store to use Nostr authentication',
+                  'Install the Amber signer app from Zapstore.dev to use Nostr authentication',
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: Colors.orange,
                   ),
